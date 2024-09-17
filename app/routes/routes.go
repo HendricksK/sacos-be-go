@@ -16,7 +16,7 @@ func Routes() {
 
 
 	e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
-		AllowOrigins: []string{"http://sacos.localhost","http://127.0.0.1:8080"},
+		AllowOrigins: []string{"http://sacos.localhost","http://127.0.0.1:8080", "102.182.190.217"},
 		AllowMethods: []string{http.MethodGet, http.MethodPut, http.MethodPost, http.MethodDelete, http.MethodOptions},
 	}))
 	

@@ -41,3 +41,8 @@ func CreateImage(c echo.Context) error {
 	httpStatusCode := models.CreateImage(c)
 	return c.JSON(httpStatusCode, 0)
 }
+
+func PatchImage(c echo.Context) error {
+	httpStatusCode := models.CreateImage(c)
+	return c.JSON(httpStatusCode, 0)
+}

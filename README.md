@@ -21,3 +21,6 @@ git submodule update --init --recursive
 
 ## submodules - no real need for submodules at the moment, but might just do it for db backups, but I think we should build out seeders here.
 git submodule update --init --recursive
+
+### using an updated version of fresh which is very helpful since watcher is now giving errors and I am a bit too lazy to figure out why https://github.com/zzwx/fresh
+### fresh -g to generate new yml config file -> fresh to start 

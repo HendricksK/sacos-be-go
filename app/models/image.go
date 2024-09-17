@@ -6,7 +6,7 @@ import (
 	"runtime"
 	"fmt"
 	"strings"
-	// "net/http"
+	"net/http"
 	// "context"
 	"github.com/labstack/echo/v4"
 	// // "encoding/json"
@@ -187,5 +187,13 @@ func GetImagesViaEntity(entity string) []Image {
 }
 
 func CreateImage(c echo.Context) int {
-	return 0
+	return http.StatusForbidden
+}
+
+func UpdateImage(c echo.Context) int {
+	return http.StatusForbidden
+}
+
+func DeleteImage(c echo.Context) int {
+	return http.StatusForbidden
 }

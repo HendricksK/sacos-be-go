@@ -21,3 +21,19 @@ func GetPage(c echo.Context) error {
 
 	return c.JSON(httpStatusCode, response)
 }
+
+func CreatePage(c echo.Context) error {
+	httpStatusCode := models.CreatePage(c)
+	return c.JSON(httpStatusCode, 0)
+}
+
+
+func PatchPage(c echo.Context) error {
+	httpStatusCode := models.UpdatePage(c)
+	return c.JSON(httpStatusCode, 0)
+}
+
+func DeletePage(c echo.Context) error {
+	httpStatusCode := models.DeletePage(c)
+	return c.JSON(httpStatusCode, 0)
+}
